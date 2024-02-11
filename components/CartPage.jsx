@@ -52,7 +52,7 @@ export default function CartPage() {
             </div>
           </div>
           <div class="md:w-1/4">
-            <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="bg-peach rounded-lg shadow-md p-6">
               <h2 class="text-lg font-semibold mb-4">Summary</h2>
               <div class="flex justify-between mb-2">
                 <span>Subtotal</span>

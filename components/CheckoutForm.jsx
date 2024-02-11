@@ -1,6 +1,14 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
+import {
+  Menu,
+  MenuHandler,
+  Button,
+  MenuList,
+  MenuItem,
+  Checkbox,
+} from '@material-tailwind/react'
 
 export default function CheckoutForm() {
   return (
@@ -76,24 +84,85 @@ export default function CheckoutForm() {
                       <td className="py-4">Rp 250.000</td>
                     </tr>
                     <tr>
-                      <td className="py-4">
-                        <h1></h1>
+                      <td className="">
+                        <h1>Note</h1>
                       </td>
                       <td className="py-4">
                         <input
                           type="text"
-                          className="w-[250px] h-[50px] ml-[10px]  rounded-lg shadow-lg"
+                          className="w-[250px] h-[50px]  rounded-lg shadow-lg"
                           placeholder="Tulis Pesan Untuk Seller"
                         />
                       </td>
-                      <td className="py-4"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h1>Opsi Pengiriman</h1>
+                      </td>
+                      <td className="py-4">
+                        <Menu
+                          dismiss={{
+                            itemPress: false,
+                          }}
+                        >
+                          <MenuHandler>
+                            <Button className="w-[250px] shadow-lg text-black text-left bg-bgSecondary">
+                              Shipping
+                            </Button>
+                          </MenuHandler>
+                          <MenuList>
+                            <MenuItem className="p-10">
+                              <label
+                                htmlFor="item-1"
+                                className="flex cursor-pointer items-center gap-2 p-2"
+                              >
+                                <Checkbox
+                                  ripple={false}
+                                  id="item-1"
+                                  containerProps={{ className: 'p-0' }}
+                                  className="hover:before:content-none"
+                                />
+                                Hemat
+                              </label>
+                            </MenuItem>
+                            <MenuItem className="p-0">
+                              <label
+                                htmlFor="item-2"
+                                className="flex cursor-pointer items-center gap-2 p-2"
+                              >
+                                <Checkbox
+                                  ripple={false}
+                                  id="item-2"
+                                  containerProps={{ className: 'p-0' }}
+                                  className="hover:before:content-none"
+                                />
+                                Reguler
+                              </label>
+                            </MenuItem>
+                            <MenuItem className="p-0">
+                              <label
+                                htmlFor="item-3"
+                                className="flex cursor-pointer items-center gap-2 p-2"
+                              >
+                                <Checkbox
+                                  ripple={false}
+                                  id="item-3"
+                                  containerProps={{ className: 'p-0' }}
+                                  className="hover:before:content-none"
+                                />
+                                Express
+                              </label>
+                            </MenuItem>
+                          </MenuList>
+                        </Menu>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
             <div className="md:w-1/4">
-              <div className="bg-white rounded-lg shadow-md p-6">
+              <div className="bg-peach rounded-lg shadow-md p-6">
                 <h2 className="text-lg font-semibold mb-4">Summary</h2>
                 <div className="flex justify-between mb-2">
                   <span>Subtotal</span>
@@ -108,7 +177,7 @@ export default function CheckoutForm() {
                   <span className="font-semibold">Total</span>
                   <span className="font-semibold">Rp. 262.000</span>
                 </div>
-                <Link href="/checkout">
+                <Link href="/payment">
                   <button className="bg-primary text-white font-bold py-2 px-4 rounded-lg mt-4 w-full">
                     Payment
                   </button>

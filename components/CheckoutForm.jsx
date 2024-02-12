@@ -31,7 +31,7 @@ export default function CheckoutForm() {
                     <tr>
                       <td className="py-4">
                         <div className="flex items-center">
-                          <h1 className="font-bold tx-lg">Vendi</h1>
+                          <h1 className="font-bold text-lg">Vendi</h1>
                         </div>
                       </td>
                       <td className="py-4">
@@ -122,7 +122,7 @@ export default function CheckoutForm() {
                                   containerProps={{ className: 'p-0' }}
                                   className="hover:before:content-none"
                                 />
-                                Hemat
+                                Anteraja
                               </label>
                             </MenuItem>
                             <MenuItem className="p-0">
@@ -136,7 +136,7 @@ export default function CheckoutForm() {
                                   containerProps={{ className: 'p-0' }}
                                   className="hover:before:content-none"
                                 />
-                                Reguler
+                                JNE
                               </label>
                             </MenuItem>
                             <MenuItem className="p-0">
@@ -150,7 +150,7 @@ export default function CheckoutForm() {
                                   containerProps={{ className: 'p-0' }}
                                   className="hover:before:content-none"
                                 />
-                                Express
+                                Sicepat
                               </label>
                             </MenuItem>
                           </MenuList>
@@ -163,7 +163,9 @@ export default function CheckoutForm() {
             </div>
             <div className="md:w-1/4">
               <div className="bg-peach rounded-lg shadow-md p-6">
-                <h2 className="text-lg font-semibold mb-4">Summary</h2>
+                <h2 className="text-lg font-semibold text-center mb-4">
+                  Summary
+                </h2>
                 <div className="flex justify-between mb-2">
                   <span>Subtotal</span>
                   <span>Rp. 250.000</span>
@@ -177,7 +179,7 @@ export default function CheckoutForm() {
                   <span className="font-semibold">Total</span>
                   <span className="font-semibold">Rp. 262.000</span>
                 </div>
-                <Link href="/payment">
+                <Link href="/paymentpage">
                   <button className="bg-primary text-white font-bold py-2 px-4 rounded-lg mt-4 w-full">
                     Payment
                   </button>

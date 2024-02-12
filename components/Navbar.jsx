@@ -26,7 +26,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/accountpage">
               <IoMdNotificationsOutline color="white" size={38} />
             </Link>
           </li>

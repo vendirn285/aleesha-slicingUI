@@ -1,9 +1,10 @@
 import React from 'react'
 import Navbar from '@/components/Navbar'
-import Payment from '@/components/Payment'
+import Sidebar from '@/components/Sidebar'
+import ReviewForm from '@/components/ReviewForm'
 import Footer from '@/components/Footer'
 
-export default function paymentpage() {
+export default function reviewinputpage() {
   return (
     <>
       <main className="bg-bgSecondary">
@@ -13,8 +14,9 @@ export default function paymentpage() {
           </div>
         </section>
         <section>
-          <div className="container mx-auto pt-[250px]">
-            <Payment />
+          <div className="container flex space-x-3 mx-auto pt-[250px] mb-64">
+            <Sidebar />
+            <ReviewForm />
           </div>
         </section>
         <section>

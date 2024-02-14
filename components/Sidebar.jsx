@@ -35,7 +35,7 @@ export default function Sidebar() {
               Keranjang
             </ListItem>
           </Link>
-          <Link href="/">
+          <Link href="/reviewpage">
             <ListItem className="font-bold text-lg hover:bg-grape">
               Ulasan
             </ListItem>

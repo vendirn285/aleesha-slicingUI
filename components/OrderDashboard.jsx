@@ -105,7 +105,7 @@ export default function OrderDashboard() {
               </div>
               <div>
                 <div className="flex justify-end space-x-4">
-                  <Link href="/paymentpage">
+                  <Link href="/reviewinputpage">
                     <button className="bg-primary text-white font-bold py-2 w-[120px] rounded-lg ">
                       Nilai
                     </button>

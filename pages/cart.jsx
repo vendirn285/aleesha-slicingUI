@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '@/components/Navbar'
 import CartPage from '@/components/CartPage'
+import Footer from '@/components/Footer'
 
 export default function cart() {
   return (
@@ -15,6 +16,9 @@ export default function cart() {
           <div className="container mx-auto pt-[250px]">
             <CartPage />
           </div>
+        </section>
+        <section>
+          <Footer />
         </section>
       </main>
     </>

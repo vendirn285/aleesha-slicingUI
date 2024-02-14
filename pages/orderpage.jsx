@@ -1,10 +1,10 @@
 import React from 'react'
 import Navbar from '@/components/Navbar'
-import ProfileForm from '@/components/ProfileForm'
 import Sidebar from '@/components/Sidebar'
 import Footer from '@/components/Footer'
+import OrderDashboard from '@/components/OrderDashboard'
 
-export default function accountpage() {
+export default function orderpage() {
   return (
     <>
       <main className="bg-bgSecondary">
@@ -16,7 +16,7 @@ export default function accountpage() {
         <section>
           <div className="container flex space-x-3 mx-auto pt-[250px] mb-64">
             <Sidebar />
-            <ProfileForm />
+            <OrderDashboard />
           </div>
         </section>
         <section>

@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { HiMapPin } from 'react-icons/hi2'
 import CheckoutForm from '@/components/CheckoutForm'
 
-export default function cart() {
+export default function checkout() {
   return (
     <>
       <main className="bg-bgSecondary">

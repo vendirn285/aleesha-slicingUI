@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '@/components/Navbar'
 import Payment from '@/components/Payment'
 
-export default function cart() {
+export default function paymentpage() {
   return (
     <>
       <main className="bg-bgSecondary">

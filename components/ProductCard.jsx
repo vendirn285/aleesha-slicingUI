@@ -129,13 +129,15 @@ const ProductCard = ({ id, image, brand, name, price, rating }) => (
         </div>
       </CardBody>
       <CardFooter className="pt-0">
-        <Button
-          ripple={false}
-          fullWidth={true}
-          className="bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
-        >
-          Add to Cart
-        </Button>
+        <Link href="product/productpage">
+          <Button
+            ripple={false}
+            fullWidth={true}
+            className="bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+          >
+            Add to Cart
+          </Button>
+        </Link>
       </CardFooter>
     </Card>
     <Link href="/product/[slug]" as={`/product/${products.id}`}></Link>

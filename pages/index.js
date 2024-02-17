@@ -16,11 +16,11 @@ export default function index() {
       <main>
         <section>
           <div className="container">
-            <Navbar></Navbar>
+            <Navbar />
           </div>
         </section>
         <section>
-          <div className="container mx-auto pt-[250px]">
+          <div className="container mx-auto pt-48">
             <CarouselTransition></CarouselTransition>
           </div>
         </section>
@@ -29,22 +29,27 @@ export default function index() {
             <ImageCategory></ImageCategory>
           </div>
         </section>
-        <h1 className="mx-auto ml-72 pt-20 text-2xl font-bold">Produk Rekomendasi Untuk Kamu</h1>
+        <h1 className="mx-auto ml-72 pt-20 text-2xl font-bold">
+          Produk Rekomendasi Untuk Kamu
+        </h1>
         <section className="container mx-auto pt-20">
           <ProductCard />
         </section>
-        <h1 className="mx-auto ml-72 pt-20 text-2xl font-bold">Produk Terbaru</h1>
+        <h1 className="mx-auto ml-72 pt-20 text-2xl font-bold">
+          Produk Terbaru
+        </h1>
         <section className="container mx-auto pt-20">
           <ProductCard />
         </section>
-        <h1 className="mx-auto ml-72 pt-20 text-2xl font-bold">Produk Untuk Bunda</h1>
+        <h1 className="mx-auto ml-72 pt-20 text-2xl font-bold">
+          Produk Untuk Bunda
+        </h1>
         <section className="container mx-auto pt-20">
           <ProductCard />
         </section>
         <section>
           <Footer />
         </section>
-
       </main>
     </>
   )

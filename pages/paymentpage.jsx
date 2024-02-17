@@ -13,7 +13,7 @@ export default function paymentpage() {
           </div>
         </section>
         <section>
-          <div className="container mx-auto pt-[250px]">
+          <div className="container mx-auto pt-48">
             <Payment />
           </div>
         </section>

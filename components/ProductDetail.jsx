@@ -128,7 +128,7 @@ export default function ProductDetail() {
                 <h2 className="w-16 text-xl font-semibold dark:text-gray-400">
                   Quantity
                 </h2>
-                <div className="relative flex flex-row w-full h-10 bg-button border rounded-lg">
+                <div className="relative flex flex-row w-full h-10 bg-button border rounded-full">
                   <button className="w-20 h-full text-gray-600 bg-gray-300 rounded-l outline-none cursor-pointer dark:hover:bg-gray-700 dark:text-gray-400 hover:text-gray-700 dark:bg-gray-900 hover:bg-gray-400">
                     <span className="m-auto text-2xl font-thin">-</span>
                   </button>
@@ -149,14 +149,18 @@ export default function ProductDetail() {
               </div>
               <div className="flex items-center space-x-4">
                 <div className="w-1/2 mb-4">
-                  <button className="bg-transparent text-primary w-full font-bold py-2 px-4 border border-primary rounded-lg ">
-                    Masukan Keranjang
-                  </button>
+                  <Link href="/cart">
+                    <button className="bg-transparent text-primary w-full font-bold py-2 px-4 border border-primary rounded-full ">
+                      Masukan Keranjang
+                    </button>
+                  </Link>
                 </div>
                 <div className="mb-4 w-1/2">
-                  <button className="bg-primary text-white w-full font-bold py-2 rounded-lg ">
-                    Beli Sekarang
-                  </button>
+                  <Link href="/checkout">
+                    <button className="bg-primary text-white w-full font-bold py-2 rounded-full ">
+                      Beli Sekarang
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

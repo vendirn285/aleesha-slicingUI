@@ -14,7 +14,7 @@ export default function accountpage() {
           </div>
         </section>
         <section>
-          <div className="container flex space-x-3 mx-auto pt-[250px] mb-64">
+          <div className="container flex space-x-3 mx-auto pt-48 mb-64">
             <Sidebar />
             <ProfileForm />
           </div>

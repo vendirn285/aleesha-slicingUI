@@ -1,13 +1,14 @@
 import React from 'react'
 import Navbar from '@/components/Navbar'
-import Sidebar from '@/components/Sidebar'
 import Footer from '@/components/Footer'
-import OrderDashboard from '@/components/OrderDashboard'
+import SearchProduct from '@/components/SearchProduct'
+import FilterBar from '@/components/FilterBar'
+import ProductCard from '@/components/ProductCard'
 
-export default function orderpage() {
+export default function productdetail() {
   return (
     <>
-      <main className="bg-bgSecondary">
+      <main className="bg-white">
         <section>
           <div className="container">
             <Navbar></Navbar>
@@ -15,8 +16,13 @@ export default function orderpage() {
         </section>
         <section>
           <div className="container flex space-x-3 mx-auto pt-48 mb-64">
-            <Sidebar />
-            <OrderDashboard />
+            <FilterBar />
+            <SearchProduct />
+          </div>
+        </section>
+        <section>
+          <div className="container flex space-x-3 mx-auto pt-48 mb-64">
+            <ProductCard />
           </div>
         </section>
         <section>

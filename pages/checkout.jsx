@@ -12,7 +12,7 @@ export default function checkout() {
           </div>
         </section>
         <section>
-          <div className="container mx-auto pt-[250px]">
+          <div className="container mx-auto pt-48">
             <CheckoutForm />
           </div>
         </section>

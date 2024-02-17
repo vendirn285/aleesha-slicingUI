@@ -13,7 +13,7 @@ export default function cart() {
           </div>
         </section>
         <section>
-          <div className="container mx-auto pt-[250px]">
+          <div className="container mx-auto pt-48">
             <CartPage />
           </div>
         </section>

@@ -4,63 +4,52 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { MdOutlineShoppingBag } from 'react-icons/md'
 import { IoMdNotificationsOutline } from 'react-icons/io'
+import { GoSearch } from 'react-icons/go'
+import NavbarBottom from './NavbarBottom'
 
 export default function Navbar() {
   return (
-    <div className="fixed w-full h-[150px] bg-primary z-10">
-      <header className="h-full ml-[80px] px-20 flex items-center justify-between">
-        <div style={{ height: 81 }} className="flex">
-          <Image src={logo} alt="logo"></Image>
+    <div className="fixed z-10 w-full bg-primary">
+      <header className="flex justify-between items-center mx-20 mt-5 space-x-10">
+        <div>
+          <Image src={logo} width={250} height={100} alt="/" />
         </div>
-
-        <input
-          type="text"
-          className="w-[950px] h-[50px] ml-[10px]  rounded-lg shadow-lg"
-          placeholder="Search"
-        />
-
-        <ul className="flex space-x-[80px]">
-          <li>
-            <Link href="/cart">
-              <MdOutlineShoppingBag color="white" size={35} />
-            </Link>
-          </li>
-          <li>
-            <Link href="/accountpage">
-              <IoMdNotificationsOutline color="white" size={38} />
-            </Link>
-          </li>
-          <Link href="/" className="px-4 py-2 text-black bg-peach rounded-md">
-            Sign In
-          </Link>
-          <li></li>
-        </ul>
+        <div className="flex w-3/4 items-center justify-center">
+          <div className="flex w-full mx-10 rounded bg-white">
+            <input
+              className="w-full border-none bg-transparent px-4 py-1 text-gray-400 outline-none focus:outline-none "
+              type="search"
+              name="search"
+              placeholder="Search..."
+            />
+            <button type="submit" className="rounded px-4 py-2 text-black mx- ">
+              <GoSearch />
+            </button>
+          </div>
+        </div>
+        <div>
+          <ul className="flex items-center space-x-20">
+            <li>
+              <Link href="/cart">
+                <MdOutlineShoppingBag color="white" size={30} />
+              </Link>
+            </li>
+            <li>
+              <Link href="/accountpage">
+                <IoMdNotificationsOutline color="white" size={30} />
+              </Link>
+            </li>
+            <li>
+              <Link href="/paymentpage">
+                <button className="bg-peach text-black text-sm font-bold rounded-full w-full px-8 py-2">
+                  Login
+                </button>
+              </Link>
+            </li>
+          </ul>
+        </div>
       </header>
-
-      <nav className="fixed top-[115px] left-[485px]">
-        <ul className="flex space-x-[60px]">
-          <li>
-            <Link href="/" className="text-white">
-              Filter
-            </Link>
-          </li>
-          <li>
-            <Link href="/" className="text-white">
-              Produk terbaru
-            </Link>
-          </li>
-          <li>
-            <Link href="/" className="text-white">
-              Costumer Service
-            </Link>
-          </li>
-          <li>
-            <Link href="/" className="text-white">
-              Tentang Kami
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <NavbarBottom />
     </div>
   )
 }

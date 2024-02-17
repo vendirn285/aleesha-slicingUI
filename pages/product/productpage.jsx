@@ -3,6 +3,8 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ProductDetail from '@/components/ProductDetail'
 import ReviewSection from '@/components/ReviewSection'
+import UserReviews from '@/components/UserReviews'
+import ProductCard from '@/components/ProductCard'
 
 export default function productdetail() {
   return (
@@ -14,7 +16,7 @@ export default function productdetail() {
           </div>
         </section>
         <section>
-          <div className="container flex space-x-3 mx-auto pt-[150px]">
+          <div className="container flex space-x-3 mx-auto pt-48">
             <ProductDetail></ProductDetail>
           </div>
         </section>
@@ -22,6 +24,15 @@ export default function productdetail() {
           <div className="container flex space-x-3 mx-auto mb-20">
             <ReviewSection />
           </div>
+        </section>
+        <section>
+          <div className="container flex space-x-3 mx-auto">
+            <UserReviews />
+          </div>
+        </section>
+        <h1 className="mx-auto ml-72 text-2xl font-bold mb-9">Produk Serupa</h1>
+        <section className="container mx-auto mb-20">
+          <ProductCard />
         </section>
         <section>
           <Footer />

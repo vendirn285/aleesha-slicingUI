@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 export default function CarouselTransition() {
   return (
-    <div className="flex w-full justify-center items-center">
-      <div className="w-[1245px] h-[555px]">
+    <div className="flex w-full justify-center items-center ">
+      <div className="w-full mx-20">
         <Carousel
           className="rounded-xl"
           prevArrow={({ handlePrev }) => (
@@ -61,21 +61,21 @@ export default function CarouselTransition() {
             src="/images/carousel_1.png"
             alt="image 1"
             className="h-full w-full object-cover"
-            width={1245}
+            width={1760}
             height={555}
           />
           <Image
             src="/images/carousel_2.png"
             alt="image 2"
             className="h-full w-full object-cover"
-            width={1245}
+            width={1760}
             height={555}
           />
           <Image
             src="/images/carousel_3.png"
             alt="image 3"
             className="h-full w-full object-cover"
-            width={1245}
+            width={1760}
             height={555}
           />
         </Carousel>

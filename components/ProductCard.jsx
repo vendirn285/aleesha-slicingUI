@@ -51,7 +51,7 @@ const products = [
     id: 3,
     image: '/images/product_3.png',
     brand: 'Clevamama',
-    name: 'Bantal dan Guling Khusus Bayi',
+    name: 'Bantal Guling Bayi',
     price: 'Rp.125.000',
     rating: 4.2,
   },
@@ -86,19 +86,19 @@ const products = [
 ]
 
 const ProductCard = ({ id, image, brand, name, price, rating }) => (
-  <div>
-    <Card key={id} className="w-50 mr-4 flex justify-center">
+  <div className="flex items-center justify-center ">
+    <Card key={id} className="mr-4 flex justify-center">
       <CardHeader
         shadow={false}
         floated={false}
-        className="h-[200px] w-[200px]"
+        className="h-[150px] w-[150px] justify-center"
       >
         <Image
           src={image}
           alt={`${brand} ${name}`}
-          className="h-full w-full"
-          width={200}
-          height={200}
+          className="h-full w-full justify-center"
+          width={150}
+          height={150}
         />
       </CardHeader>
       <CardBody>

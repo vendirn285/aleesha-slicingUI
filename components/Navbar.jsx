@@ -40,7 +40,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="/paymentpage">
+              <Link href="/login">
                 <button className="bg-peach text-black text-sm font-bold rounded-full w-full px-8 py-2">
                   Login
                 </button>

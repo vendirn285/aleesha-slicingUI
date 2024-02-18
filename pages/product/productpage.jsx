@@ -16,7 +16,7 @@ export default function productdetail() {
           </div>
         </section>
         <section>
-          <div className="container flex space-x-3 mx-auto pt-48">
+          <div className="container flex space-x-3 mx-auto pt-28">
             <ProductDetail></ProductDetail>
           </div>
         </section>

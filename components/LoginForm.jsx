@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false)
@@ -58,19 +59,19 @@ const LoginForm = () => {
         </div>
         <div class="p-6 pt-16">
           <button
-            class="block w-full bg-primary select-none rounded-lg bg-gradient-to-tr from-gray-900 to-gray-800 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-black shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            class="block w-full bg-peach select-none rounded-lg bg-gradient-to-tr from-gray-900 to-gray-800 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-black shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
           >
             LOGIN
           </button>
           <p class="flex justify-center mt-6 font-sans text-sm antialiased font-light leading-normal text-inherit">
             Belum punya akun?
-            <a
-              href="/signup"
+            <Link
+              href="/register"
               class="block ml-1 font-sans text-sm antialiased font-bold leading-normal text-blue-gray-900"
             >
               Daftar
-            </a>
+            </Link>
           </p>
         </div>
       </div>

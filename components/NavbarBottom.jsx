@@ -15,7 +15,7 @@ export default function NavbarBottom() {
           </Link>
         </li>
         <li>
-          <Link href="/" className="text-white">
+          <Link href="/product/searchpage" className="text-white">
             Produk terbaru
           </Link>
         </li>
